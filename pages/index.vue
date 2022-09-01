@@ -1,5 +1,5 @@
 <template>
-  <textarea rows="10" cols="50" class="relative">
-    Hello
-  </textarea>
+  <div>
+    <TextArea class="relative"></TextArea>
+  </div>
 </template>
