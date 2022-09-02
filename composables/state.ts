@@ -1,0 +1,1 @@
+export const usePlainText = () => useState<string>('plainText', () => '')

@@ -4,14 +4,22 @@
       <div class="w-[800px]">
         <div class="flex flex-row border-gray-300">
           <!-- Sidebar -->
-          <div class="w-8 flex flex-col bg-gray-300 rounded-l-lg">
-            <button @click="marginOnRight = !marginOnRight" class="m-1">
+          <div class="w-8 flex flex-col items-center gap-2 p-2 bg-gray-300 rounded-l-lg">
+            <button 
+              @click="marginOnRight = !marginOnRight"
+              title="Click increase/decrease the width of the editor"
+            >
               <IconChevronDoubleLeft v-if="!marginOnRight"/>
               <IconChevronDoubleRight v-else />
             </button>
-            <button @click="copyToClipBoard" class="m-1 pb-96">
+            <button 
+              @click="copyToClipBoard"
+              title="Click to copy current text to the clipboard"
+              class="active:animate-bounce transition duration-200 ease-in-out"
+            >
               <IconClipboard />
             </button>
+            <div class="pb-96"></div>
           </div>
           <!-- Text editor -->
           <div class="w-full" :class="marginOnRight ? 'mr-96' : ''">
@@ -28,7 +36,6 @@
                 border-l-0
               "
             >
-              {{ plainTextCookie }}
             </textarea>
           </div>
         </div>
@@ -39,10 +46,9 @@
 
 <script setup>
   const marginOnRight = ref(false)
-  const plainText = ref('')
+  const plainText = usePlainText()
 
   function copyToClipBoard() {
-    console.log(plainText.value)
     navigator.clipboard.writeText(plainText.value)
   }
 </script>

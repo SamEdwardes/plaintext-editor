@@ -1,20 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Plain Text Editor
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+A very simple web-based plain text editor.
+
+<https://plaintext-editor.netlify.app>
+
+![Screenshot of the plain text editor web app](public/imgs/screen-shot-home-page.png)
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,21 +19,9 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+The site is automatically deployed by Netlify on commits to the main branch.
