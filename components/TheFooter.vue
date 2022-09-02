@@ -2,7 +2,6 @@
   <footer class="bg-white">
     <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
       <div class=" md:flex md:items-center md:justify-between">
-         <!-- Column (1) Copyright -->
         <div class="mt-8  md:mt-0">
           <div class="flex flow-row justify-left gap-4 pb-2">
             <NuxtLink
@@ -22,7 +21,6 @@
         </div>
         <div class="mt-8  md:mt-0">
         </div>
-        <!-- Column (3) Icons -->
         <div class="flex justify-center space-x-6">
           <a v-for="item in socialLinks" :key="item.name" :href="item.href" target="_blank" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">{{ item.name }}</span>
