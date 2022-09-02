@@ -2,7 +2,7 @@
 
 A very simple web-based plain text editor.
 
-<https://plaintext-editor.netlify.app>
+<https://plaintexteditor.xyz>
 
 ![Screenshot of the plain text editor web app](public/imgs/screen-shot-home-page.png)
 
