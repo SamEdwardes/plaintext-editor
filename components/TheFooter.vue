@@ -7,7 +7,7 @@
             <NuxtLink
               v-for="item in navLinks"
               :to="item.href"
-              :key="item.href"
+              :key="item.text"
               class="text-base text-gray-400 hover:text-gray-500 underline underline-offset-4"
               :class="item.href === route.path ? ' decoration-indigo-500 decoration-4' : 'decoration-gray-500 decoration-2' "
             >
@@ -42,8 +42,6 @@ const socialLinks = ref([
     icon: '/imgs/GitHub-Mark-64px.png'
   }
 ])
-
-
 
 const navLinks = ref([
   {

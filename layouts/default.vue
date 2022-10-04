@@ -15,7 +15,4 @@
     </Html>
   </div>
 </template>
-
-<script setup>
-</script>
       

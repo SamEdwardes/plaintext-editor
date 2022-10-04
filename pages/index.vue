@@ -19,30 +19,29 @@
             >
               <IconClipboard />
             </button>
-            <!-- <div class="pb-96"></div> -->
           </div>
           <!-- Text editor -->
           <div class="w-full" :class="marginOnRight ? 'mr-96' : ''">
             <textarea
               rows="30"
-              name="plainText"
+              name="plain_text"
               id="plain-text"
               v-model="plainText"
-              class="
-                block w-full rounded-r-lg sm:text-sm font-mono
-                 focus:border-gray-300
-                focus:ring-0
-                border-gray-300
-                border-l-0
-              "
-            >
-            </textarea>
+              :class="[
+                'block w-full rounded-r-lg sm:text-sm font-mono',
+                'focus:border-gray-300',
+                'focus:ring-0',
+                'border-gray-300',
+                'border-l-0'
+            ]"></textarea>
           </div>
         </div>
       </div>
     </div>
+    <p>
+      {{ plainText }}
+    </p>
   </div>
-  <br>
 </template>
 
 <script setup>
