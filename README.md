@@ -1,14 +1,16 @@
 # Plain Text Editor
 
-A very simple web-based plain text editor.
+A very simple web-based plain text editor that play nice with Grammarly.
 
 <https://plaintexteditor.xyz>
 
-![Screenshot of the plain text editor web app](public/imgs/screen-shot-home-page.png)
+![Screenshot of the plain text editor web app with Grammarly closed.](public/imgs/screenshot-grammarly-closed.png)
+
+![Screenshot of the plain text editor web ap with Grammarly open.](public/imgs/screenshot-grammarly-open.png)
 
 ## Setup
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
 yarn install
