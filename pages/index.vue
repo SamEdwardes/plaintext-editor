@@ -19,7 +19,7 @@
             >
               <IconClipboard />
             </button>
-            <div class="pb-96"></div>
+            <!-- <div class="pb-96"></div> -->
           </div>
           <!-- Text editor -->
           <div class="w-full" :class="marginOnRight ? 'mr-96' : ''">
@@ -42,6 +42,7 @@
       </div>
     </div>
   </div>
+  <br>
 </template>
 
 <script setup>
