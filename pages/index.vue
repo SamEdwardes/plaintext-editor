@@ -38,9 +38,6 @@
         </div>
       </div>
     </div>
-    <p>
-      {{ plainText }}
-    </p>
   </div>
 </template>
 
