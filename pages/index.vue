@@ -23,20 +23,23 @@
           </div>
           <!-- Text editor -->
           <div class="w-full" :class="marginOnRight ? 'mr-96' : ''">
-            <textarea
-              rows="30"
-              name="plainText"
-              id="plain-text"
-              v-model="plainText"
-              class="
-                block w-full rounded-r-lg sm:text-sm font-mono
-                 focus:border-gray-300
-                focus:ring-0
-                border-gray-300
-                border-l-0
-              "
-            >
-            </textarea>
+            <GrammarlyEditorPlugin clientId="client_5qnTMksye2G5rsDp8wpjLj">
+              <textarea
+                rows="30"
+                name="plainText"
+                id="plain-text"
+                v-model="plainText"
+                class="
+                  block w-full rounded-r-lg sm:text-sm font-mono
+                   focus:border-gray-300
+                  focus:ring-0
+                  border-gray-300
+                  border-l-0
+                "
+              >
+              </textarea>
+            </GrammarlyEditorPlugin>
+            <GrammarlyButton tone-position="left" />
           </div>
         </div>
       </div>
@@ -45,6 +48,7 @@
 </template>
 
 <script setup>
+  import { GrammarlyEditorPlugin } from '@grammarly/editor-sdk-vue'
   const marginOnRight = ref(false)
   const plainText = usePlainText()
 

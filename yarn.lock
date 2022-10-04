@@ -296,6 +296,18 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.6.tgz#45be4184f00e505411bc265a05e709764114acd8"
   integrity sha512-hqmVU2mUjH6J2ZivHphJ/Pdse2ZD+uGCHK0uvsiLDk/JnSedEVj77CiVUnbMKuU4tih1TZZL8tG9DExQg/GZsw==
 
+"@grammarly/editor-sdk-vue@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@grammarly/editor-sdk-vue/-/editor-sdk-vue-2.0.2.tgz#29a3cecd55e01921f315bba769b9a005d5f1c057"
+  integrity sha512-a74WdQPnGLwv978vVp+7poVWLAobZU3e7E7P5zkI5VDTTHyuyDToFjRjbrADjPYM4iMS7seykgNTx397EAipjw==
+  dependencies:
+    "@grammarly/editor-sdk" "2.0.2"
+
+"@grammarly/editor-sdk@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@grammarly/editor-sdk/-/editor-sdk-2.0.2.tgz#208b7a58ce21003ed44da2e07fc4cd9d63223eea"
+  integrity sha512-LC6H1rg0vvPa4+ITyEmuqCji+1PvEhREh+15cZ286x6L9YsPz5ZwDC6dE5nBUlrdHX4X4vrt2h5ghsh6jfTzKg==
+
 "@headlessui/vue@^1.6.7":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.7.tgz#433b86e5f86203606e7ac4851777173a327dd8c4"
